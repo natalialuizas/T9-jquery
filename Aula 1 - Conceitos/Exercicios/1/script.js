@@ -23,3 +23,17 @@ const frases = [
     "O bom-senso vai mais longe do que muito conhecimento.",
 ]
 
+//Jquery
+$(document).ready(() => {
+  
+  const sorteioFrase = () => frases[Math.floor(Math.random() * frases.length)];
+
+ $('.biscoito').click(() => {
+    $('#message')
+           .text(sorteioFrase())
+           .css('color', 'red')
+           .css('font-size', '30px')
+            
+ })
+
+})
