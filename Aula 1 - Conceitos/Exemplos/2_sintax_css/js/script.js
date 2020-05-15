@@ -1,44 +1,44 @@
-$(document).ready(function() {
+$(document).ready(() => {
 
-//chamando pela tag
 $('h1').css('color', '#f66')
-$('h1').css('font-size', '50px')
-$('h1').hide();
-$('h1').delay('2000'); //2000ms = 2s
-$('h1').fadeIn('slow');
-$('h1').text('Olár menines')
+$('h1').css('font-size', '50px;')
+$('h1').hide()
+$('h1').delay('2000')
+$('h1').fadeIn('slow')
+$('h1').text('olá meninas')
 
-//encadeamento de bloco
+// encadeamento de bloco
 $('h1')
     .css('color', '#f66')
     .hide()
     .delay('5000')
     .fadeIn('slow')
-    .text('Surpresa!')
+    .text('olá meninas')
 
-//chamando pela classe
-$('.item1').click(function() {
-    $('body').css('background', 'blue')
-    $('h1').css('color', "#fff")
-});
-
-
-//obj 
-$('li').css({
-    color: 'red', 
-    display: 'flex', 
-    padding: '20px',
+// chamando pelo classe
+$('.item1').click(() => {
+  $('body').css('background', 'blue')
+  $('h1').css('color', '#fff')
 })
 
-//chamando por ID
+// obj
+$('li').css({
+  color: 'red',
+  display: 'flex',
+  padding: '20px',
+
+})
+// chamando o id
 $('#item2').css('color', 'yellow')
 
-$('*').css('margin-left', '200px')
+//chamando seletor universal
+$('*').css({
+  padding: '40px',
+  display:'flex'
+})
 
-$('h1, #item2, .item1').css('border-bottom', '3px solid blue')
-
-//exemplos css de parentesco
-$('div > p')
 
 })
+
+
 

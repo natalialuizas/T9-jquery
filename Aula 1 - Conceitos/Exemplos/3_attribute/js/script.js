@@ -1,17 +1,12 @@
-$(document).ready(function() {
+$(document).ready(() => {
 
-    $('p').html(`Olá é igual a 
-    <span class="cor">Hello</span>
-    <strong>Darkness</strong>
-    `
-    );
+  $('p').html(`<span class="cor">Hello</span`);
 
-    $('li').addClass("margin")
+  $('li').addClass('margin')
 
-    $('li').removeClass("item1")
+  $('li').removeClass('item')
 
-
-    $("p").click(function() {
-        $(this).toggleClass("destaque")
-    })
+  $('p').click(function() {
+    $(this).toggleClass("destaque")
+  })
 })

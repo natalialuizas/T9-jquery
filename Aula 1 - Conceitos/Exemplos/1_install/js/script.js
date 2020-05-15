@@ -1,17 +1,17 @@
-//-- JS 
-function helloJavascript() {
-    alert('Hello World')
-} helloJavascript()
+// JS
 
-//-- jQuery
+const helloJavaScript = () => alert('hello Wolrd');
+
+helloJavaScript()
+
+//jQuery
+
 //DOM
-//ready espera o DOM estar 100% carregado para realizar uma ação
-$(document).ready(function() {
-    alert('Hello World em jQuery')
-});
+// ready espera o DOM estar 100% carregado para realizar uma ação
+$(document).ready(() => alert('Hello Wolrd em jQuery'))
+ 
+// ou
+$(document).ready(helloJavaScript())
 
-//ou 
-$(function() {
-    alert('Eu sou um Hello World de uma função anonima')
-})
-
+// ou
+$(() => alert('Eu sou um Hello World com uma função anonima'))
